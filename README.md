@@ -13,7 +13,7 @@ Semester 3 bestaat uit 2 projecten, namelijk het individueel project(IP) en groe
 --------------------------------------------------
 # Learning outcomes
 
-Om naar de leerdoelen te gaan klik [hier](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/LearningOutcomes.md).
+Om naar de leerdoelen te gaan klik [hier](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes.md).
 
 Voor semester moeten ook een 2 onderzoeken worden gedaan, deze kunnen worden gevonden bij [Research](#research).
 
