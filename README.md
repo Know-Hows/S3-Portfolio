@@ -15,17 +15,19 @@ Semester 3 bestaat uit 2 projecten, namelijk het individueel project(IP) en groe
 
 Om naar de leerdoelen te gaan klik [hier](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes.md).
 
-Voor semester moeten ook een 2 onderzoeken worden gedaan, deze kunnen worden gevonden bij [Research](#research).
+Voor semester moeten ook 2 onderzoeken worden gedaan, deze kunnen worden gevonden bij [Research](#research).
 
 --------------------------------------------------
 # projecten
 ## Individueel project
 
-hier moet nog info komen l l l l l l l l l l l
+- [Front-end project](https://github.com/Know-Hows/S3-Front-End)
+- [Back-end project](https://github.com/Know-Hows/S3-Back-End)
 
 ## Groep project
 
-hier moet nog info komen l l l l l l l l l l l
+- [Front-end project]()
+- [Back-end project]()
 
 --------------------------------------------------
 # Research
