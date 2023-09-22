@@ -64,14 +64,14 @@ The project repositories:
 Semester 3 requires you to accomplish 8 learning outcomes by showing the progress and products that have been made.
 | Learning outcome | Proof |
 | ----------- | ----------- |
-| 1. Web application | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/1.Webapplication.md) |
-| 2. Software quality | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/2.Softwarequality.md) |
-| 3. Agile method | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/3.Agilemethod.md) |
-| 4. CI/CD | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/4.CI-CD.md) |
-| 5. Cultural differences and ethics | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/5.Culturaldifferencesandethics.md) |
-| 6. Requirements and design | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/6.Requirementsanddesign.md) |
-| 7. Business processes | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/7.Businessprocesses.md) |
-| 8. Professional | [](https://github.com/Know-Hows/S3-Portfolio/Documentatie/Learning_Outcomes/8.Professional.md) |
+| 1. Web application | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/1.%20Web%20application.md) |
+| 2. Software quality | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/2.%20Software%20quality.md) |
+| 3. Agile method | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/3.%20Agile%20method.md) |
+| 4. CI/CD | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/4.%20CI-CD.md) |
+| 5. Cultural differences and ethics | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/5.%20Cultural%20Differences%20and%20ethics.md) |
+| 6. Requirements and design | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/6.%20Requirements%20and%20design.md) |
+| 7. Business processes | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/7.%20Business%20processes.md) |
+| 8. Professional | [🔗](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/8.%20Professional.md) |
 
 
 | Learning outcomes | Clarification and Outcomes |
