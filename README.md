@@ -6,16 +6,12 @@
 >Learn the joy of accessible tutorials to learn more unique skills or hobbies. Everybody can share the tutorials that helped them to build a central place for learning. Users can vote to highlight better tutorials to learn from, this to help find reliable information faster.
 
 --------------------------------------------------
-## Inhoudsopgave
-- [Portfolio](#portfolio)
-- [KnowHows](#knowhows)
-  - [Description](#description)
-  - [Inhoudsopgave](#inhoudsopgave)
-- [projecten](#projecten)
-  - [Individueel project](#individueel-project)
+## Table of Contents
+- [Projects](#projects)
+  - [Individual project](#individual-project)
     - [Front-end](#front-end)
     - [Back-end](#back-end)
-  - [Groep project](#groep-project)
+  - [Group project](#group-project)
     - [Front-end](#front-end-1)
     - [Back-end](#back-end-1)
 - [Proof of learning outcomes](#proof-of-learning-outcomes)
@@ -23,8 +19,8 @@
 
 
 --------------------------------------------------
-# projecten
-## Individueel project
+# Projects
+## Individual project
 ### Front-end
 The frameworks and code language we used are for the front-end:
 - [React](https://react.dev/)
@@ -42,7 +38,7 @@ The frameworks and code language we used for the back-end:
 The project repositories:
 - [Back-end project](https://github.com/Know-Hows/S3-Back-End)
 
-## Groep project
+## Group project
 ### Front-end
 The frameworks and code language we used are for the front-end:
 - [React](https://react.dev/)
