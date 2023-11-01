@@ -83,6 +83,22 @@ JWT's worden vaak gebruikt voor het verifiëren van de identiteit van gebruikers
 Een van de belangrijkste voordelen van JWT's is dat ze lichtgewicht zijn en gemakkelijk kunnen worden doorgegeven via URL's, queryparameters of in de header van een HTTP-verzoek. Ze worden vaak gebruikt in moderne webontwikkeling en zijn een populaire keuze geworden voor het implementeren van authenticatie en beveiliging in webapplicaties.
 
 ### **Hoe kan ik implementeren dat er een API-key nodig is om verbinding te krijgen met de API?**
+Om gebruik te kunnen maken van een API-key in mijn API ben ik websites en tutorial videos af gegaan om een duidelijke, fijn en goede tutorial te vinden om te implementeren van API-keys. Ik heb uiteindelijk een video gevonden die hier wordt gelinkt[^3]. In deze tutorial wordt er gebruik gemaakt van een middleware en een authentication filter. 
+
+De middleware wordt gebruikt voor heel te API, dit betekent dat voor elke endpoint van elke controller een API-key nodig heeft. Door gebruik te maken van de middleware weet je zeker dat er een API-key moet worden meegestuurd met de request, maar dit zorgt natuurlijk voor geen vrijheid van dat je alleen maar voor een paar specifieke controllers of endpoints de API-key hoeft te gebruiken.
+
+De authentication filter zorgt ervoor dat er de vrijheid is om specifieke controllers of endpoints een API-key verwachten in de request. Dit zorgt er dan wel voor dat je overal moet controleren of de verwachte controllers en/of endpoints de authenticcation filter implementeren/toepassen.
+
+**AuthConfig**
+![AuthConfig](../Images/Security_Spike/AuthConfig.png
+
+**ApiKeyMiddleware**
+![ApiKeyMiddleware-1](../Images/Security_Spike/ApiKeyMiddleware-1.png
+![ApiKeyMiddleware-2](../Images/Security_Spike/ApiKeyMiddleware-2.png
+
+**ApiKeyAuthenticationFilter**
+![ApiKeyAuthenticationFilter-1](../Images/Security_Spike/ApiKeyAuthenticationFilter-1.png
+![ApiKeyAuthenticationFilter-2](../Images/Security_Spike/ApiKeyAuthenticationFilter-2.png
 
 ### **Hoe kan ik een 3rd party gebruiken om van token gebaseerde authenticatie gebruik te maken?**
 
@@ -93,3 +109,4 @@ Een van de belangrijkste voordelen van JWT's is dat ze lichtgewicht zijn en gema
 ### **Sources**
 [^1]: Leo Bekhuis. (n.d.) De beste manier om security in te richten binnen je API gateway. Retrieved november 1, 2023, from https://emagiz.com/blogs/de-beste-manier-om-security-in-te-richten-binnen-je-api-gateway/ <br>
 [^2]: paloalto networks. (n.d.) What Is API Security? Retrieved november 1, 2023, from https://www.paloaltonetworks.com/cyberpedia/what-is-api-security <br>
+[^3]: Mohamad Lawand. (october 22, 2023) API Security: A Comprehensive Guide to Safeguarding Your APIs with API Keys. Retrieved november 1, 2023, from https://www.youtube.com/watch?v=XabkK84CKI8&t=452s <br>
