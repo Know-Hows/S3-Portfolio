@@ -90,13 +90,16 @@ De middleware wordt gebruikt voor heel te API, dit betekent dat voor elke endpoi
 De authentication filter zorgt ervoor dat er de vrijheid is om specifieke controllers of endpoints een API-key verwachten in de request. Dit zorgt er dan wel voor dat je overal moet controleren of de verwachte controllers en/of endpoints de authenticcation filter implementeren/toepassen.
 
 **AuthConfig**
+
 ![AuthConfig](../Images/Security_Spike/AuthConfig.png)
 
 **ApiKeyMiddleware**
+
 ![ApiKeyMiddleware-1](../Images/Security_Spike/ApiKeyMiddleware-1.png)
 ![ApiKeyMiddleware-2](../Images/Security_Spike/ApiKeyMiddleware-2.png)
 
 **ApiKeyAuthenticationFilter**
+
 ![ApiKeyAuthenticationFilter-1](../Images/Security_Spike/ApiKeyAuthenticationFilter-1.png)
 ![ApiKeyAuthenticationFilter-2](../Images/Security_Spike/ApiKeyAuthenticationFilter-2.png)
 
