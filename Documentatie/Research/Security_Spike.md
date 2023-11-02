@@ -93,15 +93,25 @@ De authentication filter zorgt ervoor dat er de vrijheid is om specifieke contro
 
 ![AuthConfig](../Images/Security_Spike/AuthConfig.png)
 
+In de AuthConfig wordt de naam van de header gedefined waar de API-key instaat en waar de API-key kan worden opgehaald.
+
 **ApiKeyMiddleware**
 
 ![ApiKeyMiddleware-1](../Images/Security_Spike/ApiKeyMiddleware-1.png)
 ![ApiKeyMiddleware-2](../Images/Security_Spike/ApiKeyMiddleware-2.png)
 
+De ApiKeyMiddleware maakt gebruik van de InvokeAsync functie, deze functie wordt uitgevoerd zodra er een request binnen komt op de API. Hierbij vergelijkt het de meegekregen API-key met de juiste API-key om toegang te krijgen naar de API. Als de API-key niet correct is dan wordt er een 401 response gemaakt met de message "Invalid Authentication".
+
+Als de middleware wordt gebruikt dan is er een API-key nodig voor heel de API en dan kan je niet specifieke controllers of endpoints eisen dat ze de API-key nodig hebben.
+
 **ApiKeyAuthenticationFilter**
 
 ![ApiKeyAuthenticationFilter-1](../Images/Security_Spike/ApiKeyAuthenticationFilter-1.png)
 ![ApiKeyAuthenticationFilter-2](../Images/Security_Spike/ApiKeyAuthenticationFilter-2.png)
+
+De ApiKeyAuthenticationFilter maakt gebruik van een interface genaamd IAsyncAuthorizationFilter, dit zorgt ervoor dat de ApiKeyAuthenticationFilter gebruikt kan worden om voor specifieke controllers of endpoints te vragen om een API-key. Als de API-key niet correct is dan wordt er een 401 response gemaakt met de message "Invalid Authentication".
+
+Als de AuthenticationFilter wordt gebruikt dan moet je bij elke controller of endpoint neerzetten dat er gebruik moet worden gemaakt van de filter. Hierdoor moet er goed gecontroleerd worden of de filter wordt gebruik waar het ook bedoeld is om de filter te gebruiken.
 
 ### **Hoe kan ik een 3rd party gebruiken om van token gebaseerde authenticatie gebruik te maken?**
 
