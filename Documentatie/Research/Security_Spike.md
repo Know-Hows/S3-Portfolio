@@ -7,10 +7,10 @@
     - [Waarom is API beveiliging belangrijk?](#waarom-is-api-beveiliging-belangrijk)
     - [Welke manieren van beveiliging zijn er?](#welke-manieren-van-beveiliging-zijn-er)
         - [Wat is een API-key?](#wat-is-een-api-key)
-        - [Wat is Token gebaseerde authenticatie met Oauth 2.0 3rd party?](#wat-is-token-gebaseerde-authenticatie-met-oauth-20-3rd-party)
+        - [Wat is Token gebaseerde authenticatie met Auth0?](#wat-is-token-gebaseerde-authenticatie-met-auth0)
         - [Wat is een JWT?](#wat-is-een-jwt)
     - [Hoe kan ik implementeren dat er een API-key nodig is om verbinding te krijgen met de API?](#hoe-kan-ik-implementeren-dat-er-een-api-key-nodig-is-om-verbinding-te-krijgen-met-de-api)
-    - [Hoe kan ik een 3rd party gebruiken om van token gebaseerde authenticatie gebruik te maken?](#hoe-kan-ik-een-3rd-party-gebruiken-om-van-token-gebaseerde-authenticatie-gebruik-te-maken)
+    - [Hoe kan ik auth0 gebruiken om een token gebaseerde authenticatie te implementeren?](#hoe-kan-ik-auth0-gebruiken-om-een-token-gebaseerde-authenticatie-te-implementeren)
 - [Conclusie](#conclusie)
 
 ## **Hoe kan er een beveiligde verbinding worden gemaakt tussen de front-end en back-end?**
@@ -58,16 +58,25 @@ API-keys worden vaak gebruikt om beperkte toegang tot een API te bieden, zodat d
 
 Het is belangrijk om API-sleutels vertrouwelijk te houden en veilig te beheren, omdat ze kunnen worden misbruikt als ze in handen vallen van kwaadwillende partijen. Het is ook raadzaam om regelmatig API-keys te roteren om de beveiliging te handhaven en ongeautoriseerd gebruik te voorkomen.
 
-#### **Wat is Token gebaseerde authenticatie met Oauth 2.0 3rd party?**
-Token-gebaseerde authenticatie met OAuth via een derde partij is een mechanisme dat wordt gebruikt voor autorisatie en authenticatie tussen verschillende applicaties. Het wordt vaak gebruikt wanneer een applicatie toegang nodig heeft tot de bronnen van een andere applicatie, maar de eigenaar van die bronnen wil bepalen welke delen van de bronnen toegankelijk zijn en welke rechten de externe applicatie heeft.
+#### **Wat is Token gebaseerde authenticatie met Auth0?**
+Token gebaseerde authenticatie met Auth0 verwijst naar het proces waarbij Auth0 wordt gebruikt als een externe service voor identiteits- en toegangsbeheer in een applicatie of systeem. Auth0 is een populaire Identity-as-a-Service (IDaaS) platform dat ontwikkelaars en bedrijven in staat stelt om veilige, schaalbare en aanpasbare authenticatie- en autorisatie-oplossingen te implementeren.
 
-OAuth is een open standaard voor autorisatie die gebruikers in staat stelt beperkte toegang te verlenen tot hun gegevens op een andere website of applicatie, zonder hun gebruikersnaam en wachtwoord te delen. Met OAuth kan een gebruiker bijvoorbeeld een externe applicatie toestemming geven om namens hem toegang te krijgen tot bepaalde informatie, zoals zijn profielgegevens of foto's op een sociale-mediasite, zonder zijn inloggegevens aan de externe applicatie te verstrekken.
+Bij token-gebaseerde authenticatie met Auth0 doorloopt een gebruiker het volgende proces:
 
-Een derde partij in dit geval verwijst naar de serviceprovider die de OAuth-service verleent, waarbij de eindgebruiker in staat wordt gesteld toegang te verlenen aan een andere applicatie zonder zijn inloggegevens te delen. De derde partij fungeert als tussenpersoon tussen de eindgebruiker en de externe applicatie, waarbij de toegangsrechten worden beheerd via tokens.
+- Een gebruiker vraagt toegang tot een beveiligde bron binnen een applicatie.
+- De applicatie stuurt een verificatieverzoek naar Auth0.
+- Auth0 verifieert de gebruiker en genereert een token (zoals een JSON Web Token, JWT) dat de identiteit van de gebruiker vertegenwoordigt en de relevante machtigingen bevat.
+- Het gegenereerde token wordt naar de applicatie teruggestuurd.
+- De applicatie verifieert de geldigheid en authenticiteit van het token. Als het token geldig is, staat de applicatie de gebruiker toe toegang te krijgen tot de aangevraagde bronnen of functionaliteiten.
 
-Wanneer een gebruiker toestemming geeft aan een externe applicatie via OAuth, genereert de derde partij een token die de externe applicatie kan gebruiken om toegang te krijgen tot de toegestane bronnen. Dit token fungeert als een vervanging voor de gebruikersnaam en het wachtwoord en kan worden gebruikt voor het doen van API-aanvragen namens de gebruiker.
+De voordelen van het gebruik van token-gebaseerde authenticatie met Auth0 zijn onder meer:
 
-Token-gebaseerde authenticatie via OAuth met een derde partij is een veilige manier om toegang te krijgen tot beveiligde gegevens zonder gevoelige inloggegevens te delen, waardoor gebruikers meer controle hebben over hun privacy en beveiliging.
+- Veiligheid: Auth0 biedt robuuste beveiligingsfuncties, waaronder codering en handhaving van sterke wachtwoordbeleidsregels.
+- Schaalbaarheid: Auth0 kan worden geschaald voor zowel kleine als grote gebruikersbases en kan verschillende authenticatiemethoden ondersteunen.
+- Aanpasbaarheid: Auth0 kan worden geconfigureerd om aan de specifieke vereisten van een applicatie of bedrijf te voldoen.
+- Gemakkelijke integratie: Auth0 kan naadloos worden geïntegreerd met verschillende platforms en frameworks, waardoor ontwikkelaars gemakkelijk beveiligingsfuncties kunnen implementeren in hun applicaties.
+
+Al met al stelt token-gebaseerde authenticatie met Auth0 ontwikkelaars in staat om veilige en betrouwbare gebruikerservaringen te creëren zonder zich zorgen te hoeven maken over de complexiteit van het beheer van authenticatie en autorisatie.
 
 #### **Wat is een JWT?**
 JWT staat voor JSON Web Token. Het is een open standaard (RFC 7519) die een compacte en zelfstandige manier biedt om informatie veilig tussen twee partijen te verpakken als een JSON-object. Deze informatie kan worden geverifieerd en vertrouwd omdat deze digitaal is ondertekend. JWT's kunnen worden gebruikt voor verificatie en beveiligde overdracht van claims tussen twee partijen.
@@ -113,7 +122,7 @@ De ApiKeyAuthenticationFilter maakt gebruik van een interface genaamd IAsyncAuth
 
 Als de AuthenticationFilter wordt gebruikt dan moet je bij elke controller of endpoint neerzetten dat er gebruik moet worden gemaakt van de filter. Hierdoor moet er goed gecontroleerd worden of de filter wordt gebruik waar het ook bedoeld is om de filter te gebruiken.
 
-### **Hoe kan ik een 3rd party gebruiken om van token gebaseerde authenticatie gebruik te maken?**
+### **Hoe kan ik auth0 gebruiken om een token gebaseerde authenticatie te implementeren?**
 
 ## **Conclusie**
 
