@@ -46,7 +46,7 @@ Omdat API's applicatielogica, bronnen en gevoelige gegevens blootleggen, inclusi
 ### **Welke manieren van beveiliging zijn er?**
 Om een API te beveiligen zijn er verschillende mogelijkheden om uit te kiezen maar de populairdere manieren zijn op dit moment:
 - API-key
-- Token gebaseerde authenticatie via een 3rd party
+- Token gebaseerde authenticatie met Auth0
 - Gebruik maken van JWT's
 
 De laatste 2 lijken heel erg op elkaar omdat het allebei tokens zijn maar ze verschillen toch heel veel van elkaar, met name de implementatie.
@@ -100,14 +100,14 @@ De authentication filter zorgt ervoor dat er de vrijheid is om specifieke contro
 
 **AuthConfig**
 
-![AuthConfig](../Images/Security_Spike/AuthConfig.png)
+![AuthConfig](../Images/Security_Spike/ApiKey/AuthConfig.png)
 
 In de AuthConfig wordt de naam van de header gedefined waar de API-key instaat en waar de API-key kan worden opgehaald.
 
 **ApiKeyMiddleware**
 
-![ApiKeyMiddleware-1](../Images/Security_Spike/ApiKeyMiddleware-1.png)
-![ApiKeyMiddleware-2](../Images/Security_Spike/ApiKeyMiddleware-2.png)
+![ApiKeyMiddleware-1](../Images/Security_Spike/ApiKey/ApiKeyMiddleware-1.png)
+![ApiKeyMiddleware-2](../Images/Security_Spike/ApiKey/ApiKeyMiddleware-2.png)
 
 De ApiKeyMiddleware maakt gebruik van de InvokeAsync functie, deze functie wordt uitgevoerd zodra er een request binnen komt op de API. Hierbij vergelijkt het de meegekregen API-key met de juiste API-key om toegang te krijgen naar de API. Als de API-key niet correct is dan wordt er een 401 response gemaakt met de message "Invalid Authentication".
 
@@ -115,14 +115,70 @@ Als de middleware wordt gebruikt dan is er een API-key nodig voor heel de API en
 
 **ApiKeyAuthenticationFilter**
 
-![ApiKeyAuthenticationFilter-1](../Images/Security_Spike/ApiKeyAuthenticationFilter-1.png)
-![ApiKeyAuthenticationFilter-2](../Images/Security_Spike/ApiKeyAuthenticationFilter-2.png)
+![ApiKeyAuthenticationFilter-1](../Images/Security_Spike/ApiKey/ApiKeyAuthenticationFilter-1.png)
+![ApiKeyAuthenticationFilter-2](../Images/Security_Spike/ApiKey/ApiKeyAuthenticationFilter-2.png)
 
 De ApiKeyAuthenticationFilter maakt gebruik van een interface genaamd IAsyncAuthorizationFilter, dit zorgt ervoor dat de ApiKeyAuthenticationFilter gebruikt kan worden om voor specifieke controllers of endpoints te vragen om een API-key. Als de API-key niet correct is dan wordt er een 401 response gemaakt met de message "Invalid Authentication".
 
 Als de AuthenticationFilter wordt gebruikt dan moet je bij elke controller of endpoint neerzetten dat er gebruik moet worden gemaakt van de filter. Hierdoor moet er goed gecontroleerd worden of de filter wordt gebruik waar het ook bedoeld is om de filter te gebruiken.
 
 ### **Hoe kan ik auth0 gebruiken om een token gebaseerde authenticatie te implementeren?**
+Om van Auth0 gebruik te kunnen moet er eerst een account zijn aangemaakt op de [Auth0](https://auth0.com/) website. Dit kan met verschillende social's waar onder Google en Github.
+
+Als er een account is dan kan er een nieuwe applicatie worden aangemaakt, voor mijn front-end heb ik gekozen voor een Single Page Web Applications omdat het een React project is en dat wordt daarvoor geadviseerd.
+
+![CreatingAuht0App](../Images/Security_Spike/Auth0/CreatingAuth0App.png)
+
+Nadat je een nieuw applicatie hebt aangemaakt krijg je het "Domain" en "Client ID" te zien. Deze waardes worden gebruikt om vanuit de code te verbinden met de Auth0 applicatie. 
+
+Omdat deze waardes zo belangrijk zijn met de verbinding heb ik ze weggestreept zodat ze niet zichtbaar zijn
+
+![AppDomainClientId](../Images/Security_Spike/Auth0/AppDomainClientId.png)
+
+Voor het gebruik van Auth0 kan je verschillende social's gebruiken maar voor de eenvoudigheid van het uittesten en implementeren heb ik alleen gekozen voor de Google social, vooral omdat dit een van de grootste socials is.
+
+![SocialConnectionsAuth0](../Images/Security_Spike/Auth0/SocialConnectionsAuth0.png)
+
+Voordat je gebruik gaat maken van Auth0 in de applicatie is het ook belangrijk om de Callback en logout URLs te specificeren samen met de Allow Web Origins. Dit moet geconfigureerd zijn anders krijg je foutmeldingen als je Auth0 gaat gebruiken voordat dit gebeurt is.
+
+voor mijn huidige front-end kan ik op alle plekken "http://localhost:3000" neerzetten zodat het naar mijn start pagina herleid en dat het van deze base elke extensie kan accepteren.
+
+![LoginCallbackURLs](../Images/Security_Spike/Auth0/LoginCallbackURLs.png)
+![LogoutURLSAllowedOrigins](../Images/Security_Spike/Auth0/LogoutURLSAllowedOrigins.png)
+
+Om Auth0 te implementeren in het React project moet er eerst de Auth0 package worden geïnstalleerd.
+> npm install @auth0/auth0-react
+
+Als de package is geïnstalleerd moet je in de rootfile van het project, wat voor mij de index.js was, onderstaande neerzetten.
+
+![InstallingAuth0](../Images/Security_Spike/Auth0/InstallingAuth0.png)
+
+Voor de verdere implementatie om in en uit te kunnen loggen heb ik voor beide opties een component aangemaakt waar er een button te zien is die de bijgevoegde actie uitvoerd.
+
+![LoginButtonComponent](../Images/Security_Spike/Auth0/LoginButtonComponent.png)
+![LogoutButtonComponent](../Images/Security_Spike/Auth0/LogoutButtonComponent.png)
+
+Als er is ingelogd kan je informatie ophalen van het profiel zodat hiermee verdere acties kunnen worden ondernomen.
+
+Voor eenvoudigheid en het testen van Auth0 of het juist werkt heb ik een Profile component aangemaakt wat informatie van het ingelogde profiel laat zien. 
+
+![ProfileComponent](../Images/Security_Spike/Auth0/ProfileComponent.png)
+
+Nadat ik Auth0 heb geïnstalleerd en de benodigde components heb gemaakt kan ik ze aanroepen, wat ik in de HomePage doe.
+
+![Implementedauth0Components](../Images/Security_Spike/Auth0/Implementedauth0Components.png)
+
+Als ik de applicatie dan start krijg ik alleen de login en logout button te zien. Dit is de juiste bedoeling dus alles gaat nog volgens plan.
+
+![StartedAppWithAuth0](../Images/Security_Spike/Auth0/StartedAppWithAuth0.png)
+
+Als ik dan op de login knop druk wordt ik herleid naar de inlogpagina van Auth0. Hier kan ik inloggen met een zelf toegevoegd account of inloggen met de geconfigureerde social's wat op moment alleen Google is.
+
+![Auth0LoginPage](../Images/Security_Spike/Auth0/Auth0LoginPage.png)
+
+Nadat ik heb ingelogd krijg ik mijn informatie te zien op de HomePagina. Als ik daarna wil uitloggen kan dit ook maar dan wordt bovenstaande HomePage weer ingeladen.
+
+![Auth0Ingelogd](../Images/Security_Spike/Auth0/Auth0Ingelogd.png)
 
 ## **Conclusie**
 
