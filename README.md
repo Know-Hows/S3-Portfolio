@@ -16,6 +16,8 @@
     - [Back-end](#back-end-1)
 - [Proof of learning outcomes](#proof-of-learning-outcomes)
 - [Research](#research)
+  - [Security research](#security-research)
+  - [UI research](#ui-research)
 
 
 --------------------------------------------------
@@ -86,5 +88,8 @@ Semester 3 requires you to accomplish 8 learning outcomes by showing the progres
 # Research
 2 researches must also be made in semester 3, one of them has the requirement to be about security.
 
+## Security research
+[Security research](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Research/Security_Spike.md)
 
-hier moet nog info komen l l l l l l l l l l l
+## UI research
+[UI research](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Research/UI_Spike.md)
