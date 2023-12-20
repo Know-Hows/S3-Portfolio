@@ -1,14 +1,14 @@
 # **UI Spike**
 
 ## **Table of Contents**
-- [Welke best practices in User Interface design kunnen worden toegepast om de leesbaarheid en toegankelijkheid van verschillende articles te verbeteren voor gebruikers met verschillende niveaus van digitale vaardigheden?](#hoe-beïnvloeden-ui-en-ux-design-de-algemene-gebruikservaring-in-een-web-applicatie)
+- [Welke best practices in User Interface design kunnen worden toegepast rondom de leesbaarheid en toegankelijkheid van individuele articles op KnowHows voor gebruikers met verschillende niveaus van digitale vaardigheden?](#welke-best-practices-in-user-interface-design-kunnen-worden-toegepast-rondom-de-leesbaarheid-en-toegankelijkheid-van-individuele-articles-op-knowhows-voor-gebruikers-met-verschillende-niveaus-van-digitale-vaardigheden)
     - [Wat is User Interface design?](#wat-is-user-interface-design)
     - [Waarom is UI design belangrijk in een applicatie?](#waarom-is-ui-design-belangrijk-in-een-applicatie)
     - [Welke best practices zijn er in UI design](#welke-best-practices-zijn-er-in-ui-design)
     - [Hoe kan ik deze best practices implementeren in een applicatie?](#hoe-kan-ik-deze-best-practices-implementeren-in-een-applicatie)
 - [Conclusie](#conclusie)
 
-## **Welke best practices in User Interface design kunnen worden toegepast om de leesbaarheid en toegankelijkheid van articles te verbeteren voor gebruikers met verschillende niveaus van digitale vaardigheden?**
+## **Welke best practices in User Interface design kunnen worden toegepast rondom de leesbaarheid en toegankelijkheid van individuele articles op KnowHows voor gebruikers met verschillende niveaus van digitale vaardigheden?**
 
 ### **Wat is User Interface design?**
 User Interface design gaat over het voorspellen wat gebruikers moeten kunnen doen met je applicatie en er voor zorgen dat dit te doen is op een manier die simpel en begrijpelijk is voor de gemiddelde gebruiker zonder enige voorkennis over de applicatie. Dit wordt gedaan door een combinatie van interactie design, een doordachte volgorde voor de acties die een gebruiker kan nemen om te zorgen voor een applicatie die makkelijk te gebruiken is, visueel design, het strategisch gebruiken van fotos, kleuren en tekst om een identiteit te maken die iets toevoegt aan de applicatie, en ten slotte informatie architectuur, om de inhoud van de applicatie zo te presenteren dat gebruikers op een natuurlijke wijze deze inhoud kunnen vinden en benutten. [^1]
