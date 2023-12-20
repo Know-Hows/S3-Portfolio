@@ -94,7 +94,7 @@ To wanted to get a deeper understanding of our project through making designs.
 ## C4 models
 For the C4 models we made level 1 to 3, the 4th level we didn't include because it was to deep of a design that we needed for the project.
 
-These models are further explained in learning outcome 6, which is "Requirements and design".
+These models are further explained in learning outcome 6, which is "[Requirements and design](https://github.com/Know-Hows/S3-Portfolio/blob/main/Documentatie/Learning_Outcomes/6.%20Requirements%20and%20design.md#how-we-use-requirements-and-designs)".
 
 [C4 models designs](https://github.com/Know-Hows/S3-Portfolio/tree/main/Documentatie/Ontwerpen)
 
