@@ -1,7 +1,7 @@
 # **Security Spike**
 
 ## **Table of Contents**
-- [Hoe kan er een beveiligde verbinding worden gemaakt tussen de front-end en back-end?](#hoe-kan-er-een-beveiligde-verbinding-worden-gemaakt-tussen-de-front-end-en-back-end)
+- [Hoe kan er een beveiligde verbinding worden gemaakt tussen de front-end en back-end in het KnowHows project?](#hoe-kan-er-een-beveiligde-verbinding-worden-gemaakt-tussen-de-front-end-en-back-end-in-het-knowhows-project)
     - [Wat is API beveiliging?](#wat-is-api-beveiliging)
         - [API beveiliging uitgelegd.](#api-beveiliging-uitgelegd)
     - [Waarom is API beveiliging belangrijk?](#waarom-is-api-beveiliging-belangrijk)
@@ -13,7 +13,7 @@
     - [Hoe kan ik auth0 gebruiken om een token gebaseerde authenticatie te implementeren?](#hoe-kan-ik-auth0-gebruiken-om-een-token-gebaseerde-authenticatie-te-implementeren)
 - [Conclusie](#conclusie)
 
-## **Hoe kan er een beveiligde verbinding worden gemaakt tussen de front-end en back-end?**
+## **Hoe kan er een beveiligde verbinding worden gemaakt tussen de front-end en back-end in het KnowHows project?**
 
 ### **Wat is API beveiliging?**
 API beveiliging is de praktijk van het beschermen van de application programming interface (API) tegen aanvallen die kwaadwillig gebruik zouden maken van de API of die zouden proberen deze te misbruiken om gevoelige gegevens te stelen of diensten te verstoren. API beveiliging maakt gebruik van strategieën, technieken en oplossingen om ervoor te zorgen dat alleen geautoriseerde gebruikers toegang hebben tot en gebruik kunnen maken van een API, en dat de gegevens die via de API worden verzonden, beschermd zijn tegen ongeautoriseerde toegang of manipulatie.

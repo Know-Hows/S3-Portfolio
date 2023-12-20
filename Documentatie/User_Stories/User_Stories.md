@@ -6,6 +6,7 @@ Hier staan alle userstories voor het individueel project.
 - [User story 2](#user-story-2)
 - [User story 3](#user-story-3)
 - [User story 4](#user-story-4)
+- [User story 5](#user-story-5)
 
 ## User story 1
 **Als hobbyist wil ik een artikel aan kunnen maken, zodat ik mijn kennis erover kan delen met anderen.**
@@ -86,6 +87,26 @@ Definition of done
 - Er is verbinding gemaakt vanuit de front-end naar de back-end.
 - De informatie wordt opgeslagen en opgehaald vanuit de database.
 - Er is een werkende CI/CD pipeline.
+- De requirements zijn vervuld.
+- Documenteren wat er is gedaan.
+- Retrospective
+-----------------------
+
+## User story 5
+**Als hobbyist wil ik de artikels los kunnen inzien, zodat ik makkelijker de informatie kan verwerken.**
+
+requirements
+- Losse pagina maken voor individuele artikels, waar de informatie van het artikel is weer gegeven.
+- Aan de hand van de UI spike, de pagina de leesbaarheid.
+- De likesComponent integreren in de losse pagina.
+- Links in de body formatten met embedComponent.
+- Als er op een artikeltitel in de lijst van alle artikels wordt geklikt, dan moet je worden doorverwezen naar de losse pagina van dat artikel.
+
+<br>
+
+Definition of done
+- Er is verbinding gemaakt vanuit de front-end naar de back-end.
+- De informatie wordt opgeslagen en opgehaald vanuit de database.
 - De requirements zijn vervuld.
 - Documenteren wat er is gedaan.
 - Retrospective
