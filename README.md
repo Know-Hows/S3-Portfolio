@@ -15,6 +15,8 @@
     - [Front-end](#front-end-1)
     - [Back-end](#back-end-1)
 - [Proof of learning outcomes](#proof-of-learning-outcomes)
+- [Designs](#designs)
+    - [C4 models](#c4-models)
 - [Research](#research)
   - [Security research](#security-research)
   - [UI research](#ui-research)
@@ -83,6 +85,18 @@ Semester 3 requires you to accomplish 8 learning outcomes by showing the progres
 | **Business processes:** You analyze and describe simple business processes that are related to your project. | --- |
 | **Professional:** You act in a professional manner during software development and learning. | We are using Jira Board (Scrum) with our backlog, current sprint and timeline. We also made a definition of done so its clear for both of us when a subject is really done. We also made a cooperation contract with a couple of rules to improve the coorperation between Lean and Meegdes. |
 
+
+--------------------------------------------------
+
+# Designs
+To wanted to get a deeper understanding of our project through making designs.
+
+## C4 models
+For the C4 models we made level 1 to 3, the 4th level we didn't include because it was to deep of a design that we needed for the project.
+
+These models are further explained in learning outcome 6, which is "Requirements and design".
+
+[C4 models designs](https://github.com/Know-Hows/S3-Portfolio/tree/main/Documentatie/Ontwerpen)
 
 --------------------------------------------------
 # Research
