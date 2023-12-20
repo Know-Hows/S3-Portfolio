@@ -90,13 +90,13 @@ Dit is iets complexer dan een normale wireframe, maar alsnog vrij simplistisch.
 #### **4. Visueel ontwerp**
 In deze stap gaan we een werkelijk beeld maken van onze pagina. Hier komen een paar extra stappen bij die bij de wireframe nog niet zo relevant waren. Ten eerste moeten we een kleuren palette bepalen. Al vrij snel kwamen we uit op blauw als hoofdkleur omdat het een rustige kleur is maar ook een die vaak gekoppeld wordt aan wijsheid of intelligentie, wat perfect is voor een applicatie over leren. We moesten echter zeker weten dat dit idee nogsteeds zou werken voor mensen die op verschillende manieren kleurenblind zijn, dus met de hulp van [DavidMathLogic.com](https://davidmathlogic.com/colorblind/#%23001B67-%23719DFF-%23FFFFFF-%23000000) konden we kijken hoe ons palette eruit zou zien voor verschillende mensen. Het resultaat daarvan is hieronder te zien.
 
-![Palette](../Images/UI_Spike/Stap_4/Colorblind.png)
+![Palette](../Images/UI_Spike/Stap_4/Colorblind.PNG)
 
 Hier zie je links het werkelijke palette, en vervolgens hoe het eruit zou zijn voor drie verschillende soorten kleurenblindheid. Omdat we maar een enkele primaire kleur gebruiken in ons ontwerp kan het moeilijk mis gaan, wat het makkelijker maakt.
 
 Nu dat we een palette hebben, kunnen we beginnen aan een ontwerp aan de hand van de wireframe
 
-![Design](../Images/UI_Spike/Stap_4/Design.png)
+![Design](../Images/UI_Spike/Stap_4/Design.PNG)
 
 (De kleuren zijn als volgt van boven naar onder #001B67, #719DFF, #FFFFFF, #000000)
 
